@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="12dp">
+    <LinearLayout android:id="@+id/optCamera" android:layout_width="match_parent"
+        android:layout_height="56dp" android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="16dp" android:paddingEnd="16dp"
+        android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+        <ImageView android:importantForAccessibility="no" android:layout_width="24dp" android:layout_height="24dp"
+            android:src="@drawable/ic_photo_camera" android:tint="@color/navy" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="32dp" android:text="Take a photo" android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/optGallery" android:layout_width="match_parent"
+        android:layout_height="56dp" android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="16dp" android:paddingEnd="16dp"
+        android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+        <ImageView android:importantForAccessibility="no" android:layout_width="24dp" android:layout_height="24dp"
+            android:src="@drawable/ic_photo_library" android:tint="@color/navy" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="32dp" android:text="Choose from gallery" android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+</LinearLayout>

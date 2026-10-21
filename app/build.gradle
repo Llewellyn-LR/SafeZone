@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Mock-mode equivalent of the Flutter app's "REPLACE_ME firebase_options.dart":
+// the google-services plugin is only applied once you drop a real
+// google-services.json into app/ (see FIREBASE_SETUP.md). Without it the app
+// still builds and runs on the built-in mock services.
+if (file('google-services.json').exists()) {
+    apply plugin: 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.safezone.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.safezone.app'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.7'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.8.4'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    // OpenStreetMap map (flutter_map + OSM tiles equivalent; no API key needed)
+    implementation 'org.osmdroid:osmdroid-android:6.1.18'
+    // Device location (geolocator equivalent)
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+    implementation platform('com.google.firebase:firebase-bom:33.1.2')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-messaging'
+
+    testImplementation 'junit:junit:4.13.2'
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/bg_sunset_bay"  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        style="@style/SafeZone.Toolbar" android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" app:title="Create account"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Join SafeZone" android:accessibilityHeading="true" android:textSize="24sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:textSize="15sp"
+                android:textColor="@color/text_secondary"
+                android:text="Free for every resident of Nelson Mandela Bay." />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="28dp" android:hint="Full name"
+                app:startIconDrawable="@drawable/ic_person">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/name"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:hint="Email"
+                app:startIconDrawable="@drawable/ic_mail">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/email"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:hint="Password"
+                app:startIconDrawable="@drawable/ic_lock">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/password"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:hint="Confirm password"
+                app:startIconDrawable="@drawable/ic_lock">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/confirm"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:id="@+id/error" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:textColor="@color/coral_text" android:textSize="13sp" android:visibility="gone" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/registerButton"
+                    style="@style/SafeZone.Button.Primary" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Create Account" />
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/spinner" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_gravity="center"
+                    android:indeterminate="true" android:visibility="gone"
+                    app:indicatorSize="22dp" app:trackThickness="2dp" app:indicatorColor="@color/white" />
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:text="By registering you agree that anonymous reports you submit are shared with local CPFs and SAPS to help verify and act on them." />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

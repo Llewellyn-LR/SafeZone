@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:importantForAccessibility="no" android:layout_width="40dp" android:layout_height="40dp"
+        android:src="@drawable/ic_cloud_off" android:tint="@color/text_secondary" />
+    <TextView android:id="@+id/errorText"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:gravity="center"
+        android:textColor="@color/text_secondary" android:textSize="13.5sp" />
+</merge>

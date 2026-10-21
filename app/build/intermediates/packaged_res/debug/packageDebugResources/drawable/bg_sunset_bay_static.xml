@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- User screens: sunset sky (pale blue -> apricot -> coral), a glowing sun on the horizon, ocean waves. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="270" android:startColor="#CFE6F0" android:centerColor="#F7C892"
+                android:endColor="#E58B5E" android:centerY="0.55" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.5" android:centerY="0.8"
+                android:gradientRadius="60%p" android:startColor="#F2FFD68C" android:endColor="#00FFD68C" />
+        </shape>
+    </item>
+    <item android:gravity="bottom|fill_horizontal" android:height="150dp" android:drawable="@drawable/bg_waves" />
+</layer-list>

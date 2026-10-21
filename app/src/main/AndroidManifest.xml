@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".SafeZoneApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="SafeZone"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SafeZone">
+
+        <activity android:name=".ui.auth.SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.auth.LoginActivity" />
+        <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:parentActivityName=".ui.auth.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.wanted.WantedPersonsListActivity"
+            android:parentActivityName=".ui.home.MainActivity" />
+        <activity android:name=".ui.report.MyReportsActivity" android:parentActivityName=".ui.home.MainActivity" />
+        <activity android:name=".ui.help.HelpActivity" android:parentActivityName=".ui.home.MainActivity" />
+        <activity android:name=".ui.help.PrivacyActivity" android:parentActivityName=".ui.home.MainActivity" />
+        <activity android:name=".ui.sos.SosActivity" android:parentActivityName=".ui.home.MainActivity" />
+        <activity android:name=".ui.station.StationsActivity" android:parentActivityName=".ui.home.MainActivity" />
+
+        <activity
+            android:name=".ui.admin.AdminActivity"
+            android:exported="false"
+            android:label="SafeZone Moderation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.admin.AddWantedPersonActivity"
+            android:parentActivityName=".ui.admin.AdminActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

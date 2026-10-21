@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Animated admin background: hands waving in sequence. Static fallback: bg_rising_hands_static -->
+<drawable xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.safezone.app.ui.anim.RisingHandsDrawable" />

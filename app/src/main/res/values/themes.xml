@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SafeZone" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/amber</item>
+        <item name="colorError">@color/coral</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/outline_grey</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:windowAnimationStyle">@style/SafeZone.WindowAnimation</item>
+        <item name="materialCardViewStyle">@style/SafeZone.Card</item>
+        <item name="bottomSheetDialogTheme">@style/SafeZone.BottomSheetDialog</item>
+        <item name="textInputStyle">@style/SafeZone.TextInput</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.SafeZone.Dialog</item>
+    </style>
+
+    <style name="SafeZone.WindowAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/sz_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/sz_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/sz_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/sz_close_exit</item>
+    </style>
+
+    <style name="SafeZone.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/card_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="shapeAppearance">@style/SafeZone.ShapeAppearance.Card</item>
+    </style>
+    <style name="SafeZone.ShapeAppearance.Card" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="SafeZone.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/SafeZone.BottomSheet</item>
+    </style>
+    <style name="SafeZone.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="shapeAppearanceOverlay">@style/SafeZone.ShapeAppearance.TopRounded</item>
+    </style>
+    <style name="SafeZone.ShapeAppearance.TopRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">18dp</item>
+        <item name="cornerSizeTopRight">18dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="SafeZone.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/navy</item>
+        <item name="android:theme">@style/SafeZone.ToolbarOverlay</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="titleTextAppearance">@style/SafeZone.ToolbarTitle</item>
+        <item name="navigationIconTint">@color/white</item>
+    </style>
+    <style name="SafeZone.ToolbarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
+    <style name="SafeZone.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SafeZone.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="boxStrokeErrorColor">@color/coral</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.6dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="startIconTint">@color/text_secondary</item>
+        <item name="hintTextColor">@color/navy</item>
+    </style>
+
+    <style name="SafeZone.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/navy</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="SafeZone.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/outline_grey</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="iconTint">@color/navy</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+    <style name="SafeZone.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/navy</item>
+    </style>
+
+    <style name="SafeZone.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="backgroundTint">@color/surface</item>
+        <item name="itemIconTint">@color/bottom_nav_item</item>
+        <item name="itemTextColor">@color/bottom_nav_item</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">8dp</item>
+        <item name="itemActiveIndicatorStyle">@style/SafeZone.BottomNav.NoIndicator</item>
+    </style>
+    <style name="SafeZone.BottomNav.NoIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+    <style name="SafeZone.Switch.Coral" parent="">
+        <item name="colorPrimary">@color/coral</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="SafeZone.ShapeAppearance.Photo" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+    <style name="SafeZone.ShapeAppearance.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ThemeOverlay.SafeZone.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/SafeZone.ShapeAppearance.Dialog</item>
+    </style>
+    <style name="SafeZone.ShapeAppearance.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">18dp</item>
+    </style>
+</resources>

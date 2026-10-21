@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Three layers of ocean waves (user background). Stretches to the screen width. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="228dp" android:height="120dp"
+    android:viewportWidth="228" android:viewportHeight="120">
+    <path android:fillColor="#4A9DB0" android:fillAlpha="0.55"
+        android:pathData="M0,34 C40,8 80,62 120,34 S190,8 228,34 V120 H0 Z" />
+    <path android:fillColor="#2F7F94" android:fillAlpha="0.75"
+        android:pathData="M0,58 C40,30 90,86 130,58 S190,34 228,60 V120 H0 Z" />
+    <path android:fillColor="#1D5E74" android:fillAlpha="0.92"
+        android:pathData="M0,84 C50,60 90,104 140,84 S200,68 228,86 V120 H0 Z" />
+</vector>

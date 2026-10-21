@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#1F4E79</color>
+    <color name="navy_dark">#163A5C</color>
+    <color name="amber">#DDA015</color>
+    <color name="coral">#D9634F</color>
+    <color name="green">#3F8F5F</color>
+    <color name="background">#F7F8FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#1B1F23</color>
+    <color name="text_secondary">#5B6572</color>
+    <color name="amber_text">#7A5800</color>
+    <color name="coral_text">#B3402E</color>
+    <color name="green_text">#2F7048</color>
+    <color name="outline_grey">#E0E4E8</color>
+    <color name="card_border">#EBEEF1</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_75">#BFFFFFFF</color>
+    <color name="icon_background">#F3E9D6</color>
+    <color name="brand_brown">#7A4A1E</color>
+</resources>

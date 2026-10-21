@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">SafeZone</string>
+
+    <string name="help_title">Help &amp; support</string>
+    <string name="help_report_title">How to report</string>
+    <string name="help_report_body">Open the Report tab, choose a category, say where it happened and what you saw, add a photo if you like, then tap Submit. Reports are anonymous and are checked by a moderator before anything appears on the map.</string>
+    <string name="help_pins_title">What the pin colours mean</string>
+    <string name="help_pins_body">High risk (coral), medium risk (amber), low risk (green). A pin with a white centre and a coloured outline is unverified: it has not been confirmed yet, so treat it with care.</string>
+    <string name="help_anon_title">What anonymous means</string>
+    <string name="help_anon_body">Your name and email are never attached to a report or shown to anyone. The app keeps a random device session ID so you can track your own reports, and your approximate location so a moderator can place an approved report on the map. Neither is shown to other residents.</string>
+    <string name="help_mod_title">How moderation works</string>
+    <string name="help_mod_body">Every report starts as Pending review. A moderator checks it, then approves it (it becomes a public hotspot with a severity the moderator chooses) or rejects it (it is kept on file but never shown). The Map and Alerts tabs only show approved hotspots.</string>
+    <string name="help_emergency_title">Emergency numbers</string>
+    <string name="help_emergency_note">SafeZone does not contact or dispatch emergency services. If you are in danger, call.</string>
+    <string name="number_saps_emergency">SAPS emergency</string>
+    <string name="number_crime_stop">Crime Stop (anonymous tips, not an emergency line)</string>
+    <string name="number_gbv">GBV Command Centre (24 hours, toll free)</string>
+    <string name="number_gbv_call_back">Ask for a call back (Please Call Me)</string>
+    <string name="dial_failed">Couldn\'t open the phone app. Call %1$s.</string>
+    <string name="directions_failed">No maps app found to give directions.</string>
+
+    <string name="sos_title">SOS &amp; GBV help</string>
+    <string name="sos_button">SOS / GBV help</string>
+    <string name="sos_disclaimer">This app does not call or send emergency services. If you are in danger, call now using a button below.</string>
+    <string name="sos_gbv_title">Gender-based violence support</string>
+    <string name="sos_gbv_body">The GBV Command Centre is free and open 24 hours. You can also ask for a call back with the Please Call Me option.</string>
+    <string name="sos_tip_title">Report a crime anonymously</string>
+    <string name="sos_quick_exit">Quick exit</string>
+    <string name="sos_quick_exit_hint">Closes SafeZone and removes it from recent apps.</string>
+
+    <string name="privacy_title">Privacy</string>
+    <string name="privacy_collect_title">What the app stores</string>
+    <string name="privacy_collect_body">If you create an account: your name and email. If you submit a report: its category, area, description, an optional photo, your approximate location at the moment you submit, and a random device session ID.</string>
+    <string name="privacy_shown_title">What other people can see</string>
+    <string name="privacy_shown_body">Only approved hotspots appear to other residents: category, area, severity, time and the description. Your name, email, session ID, photo and exact location are never shown to residents.</string>
+    <string name="privacy_mods_title">What moderators can see</string>
+    <string name="privacy_mods_body">Moderators see the report text, photo and captured location so they can verify and place it. They do not see your name or email on a report.</string>
+    <string name="privacy_wanted_title">Wanted-persons notices</string>
+    <string name="privacy_wanted_body">These are public notices published by a moderator from official SAPS information. Residents cannot submit them. The app never states that anyone is guilty.</string>
+
+    <string name="stations_title">Nearest Station</string>
+    <string name="stations_empty">No stations could be loaded. In an emergency call 10111.</string>
+    <string name="stations_no_location">Your location isn\'t available, so stations are listed A to Z.</string>
+    <string name="stations_distance">%1$.1f km away</string>
+    <string name="stations_call">Call</string>
+    <string name="stations_no_coordinates">Directions not available yet</string>
+    <string name="stations_emergency">In danger? Call 10111</string>
+    <string name="stations_emergency_cd">Emergency: call SAPS on %1$s</string>
+    <string name="stations_directions">Directions</string>
+    <string name="map_filter_stations">Show police stations</string>
+    <string name="map_filter_stations_cd">Show or hide police station pins on the map</string>
+    <string name="map_legend_station">Police station</string>
+    <string name="station_sheet_label">SAPS police station</string>
+    <string name="station_sheet_listing">Listing: %1$s</string>
+    <string name="station_sheet_emergency">In danger? Call 10111</string>
+</resources>

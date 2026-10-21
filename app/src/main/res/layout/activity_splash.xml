@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_sunset_bay">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:orientation="vertical" android:gravity="center_horizontal"
+        android:paddingStart="48dp" android:paddingEnd="48dp" android:paddingBottom="48dp">
+        <ImageView android:id="@+id/logo" android:contentDescription="SafeZone Nelson Mandela Bay"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:adjustViewBounds="true" android:src="@drawable/safezone_logo" />
+        <com.safezone.app.ui.anim.HandsLoaderView android:id="@+id/loader"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:contentDescription="Loading" />
+    </LinearLayout>
+</FrameLayout>
