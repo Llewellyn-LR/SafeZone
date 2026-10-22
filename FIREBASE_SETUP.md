@@ -100,3 +100,7 @@ service firebase.storage {
 5. Sign in to the app with that email and password. It opens the moderation dashboard.
 
 To remove a moderator, delete their document in `moderators`.
+
+For demonstration purposes these are the default  moderator logins
+Email : Admin12345@gmaiil.com
+Password : 123456789
